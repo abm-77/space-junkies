@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3-Bryson.unity
     guid: f907dcdcddcbb47c6ac239a66e45b7a9
+  - enabled: 1
+    path: Assets/Scenes/Level4-Noah.unity
+    guid: 54fcdd4bc55d8ff4dbb2a38ef2ef6ccd
+  - enabled: 1
+    path: Assets/Scenes/Level5-Noah.unity
+    guid: 25b635c896cc1674e899eeb73d066729
   m_configObjects: {}

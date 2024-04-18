@@ -38,9 +38,10 @@ public class ThrowProjectile : MonoBehaviour
         Vector3 mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouse_pos.z = 0;
 
-        Vector3 throw_dir = (mouse_pos - player_pos);
-        float throw_mag = Mathf.Clamp(throw_dir.magnitude, 0, max_throw_mag);
-        Vector3 throw_vector = (throw_dir.normalized * throw_mag);
+        Vector3 throw_displacement = (mouse_pos - player_pos);
+        float throw_mag = Mathf.Clamp(throw_displacement.magnitude, 0, max_throw_mag);
+        var clampedMouseDrag = throw_displacement.normalized * throw_mag;
+        Vector3 throw_vector = clampedMouseDrag + (Vector3)player.velocity;
 
         if (Input.GetMouseButtonDown(0))
             line.enabled = true;
@@ -57,7 +58,7 @@ public class ThrowProjectile : MonoBehaviour
         }
 
         points[0] = player_pos;
-        points[1] = player_pos + throw_vector;
+        points[1] = player_pos + clampedMouseDrag;
         line.SetPositions(points);
 
         throw_mag *= inv_max_throw_mag;
