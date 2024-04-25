@@ -1,17 +1,19 @@
 ﻿using System;
+using R3;
 using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
     [SerializeField] private Sprite toggledSprite;
-    
+    public ReactiveProperty<bool> Hit = new(false);
+
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.tag);
-        if (other.CompareTag("Projectile") || other.CompareTag("Player"))
+        if (Hit.Value || !(other.CompareTag("Projectile") || other.CompareTag("Player")))
         {
-            Debug.Log(GetComponent<SpriteRenderer>());
-            GetComponent<SpriteRenderer>().sprite = toggledSprite;
+            return;
         }
+        Hit.Value = true;
+        GetComponent<SpriteRenderer>().sprite = toggledSprite;
     }
 }
