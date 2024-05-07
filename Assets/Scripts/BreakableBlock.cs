@@ -45,11 +45,10 @@ public class BreakableBlock : MonoBehaviour
         other.rigidbody.velocity = newVelocityAfterCollision;
 
         // TODO: play destroy animation
-        // var child = this.DestroyableObject;
-        // var collider = GetCollider2D();
-        // var sprite = GetComponent<SpriteRenderer>();
-
+        var collider = GetComponent<Collider2D>();
+        collider.enabled = false;
+        var sprite = GetComponent<SpriteRenderer>();
+        sprite.enabled = false;
         system.Play(); // Applies the new value directly to the Particle System
-        Destroy(gameObject);
     }
 }
