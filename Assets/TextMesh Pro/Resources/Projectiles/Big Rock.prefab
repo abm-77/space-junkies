@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6325278950643547399
+--- !u!1001 &3973872858124136085
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,25 +8,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -963709515066493697, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      propertyPath: _thisName
+      value: Big Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 1896534264354762763, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1401893173, guid: a5a2d5a37d0a8934fb35ef207cc3b4e8, type: 3}
-    - target: {fileID: 1896534264354762763, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
-      propertyPath: m_Color.b
-      value: 0.32604688
+      objectReference: {fileID: -330265538, guid: a5a2d5a37d0a8934fb35ef207cc3b4e8, type: 3}
+    - target: {fileID: 4554201685522796762, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      propertyPath: m_Radius
+      value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 1896534264354762763, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
-      propertyPath: m_Color.g
-      value: 0.90188676
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896534264354762763, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
-      propertyPath: m_Color.r
-      value: 0.2586544
+    - target: {fileID: 4554201685522796762, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5056762508563037216, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_Name
-      value: Bouncy Rock
+      value: Big Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6663144304636509018, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,13 +70,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8253309640218885009, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_Mass
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 8253309640218885009, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 756bef9ead3004212b327e0c1ec7faf9, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7337657367082294744, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

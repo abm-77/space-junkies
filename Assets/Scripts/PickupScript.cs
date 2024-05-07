@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PickupScript : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PickupScript : MonoBehaviour
     private Inventory inventory;
     private GameObject player;
     private SpriteRenderer r2d;
+    private Rigidbody2D rockPrefab;
+
+    [SerializeField] private string _thisName;
 
     [SerializeField]
     public float pickup_distance = 0.1f;
@@ -15,6 +19,9 @@ public class PickupScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rockPrefab = Resources.Load<Rigidbody2D>($"Projectiles/{_thisName}");
+        Debug.Log(_thisName);
+        Debug.Log(rockPrefab);
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         player = GameObject.FindGameObjectWithTag("Player");
         r2d = GetComponent<SpriteRenderer>();
@@ -30,8 +37,8 @@ public class PickupScript : MonoBehaviour
             {
                 Rigidbody2D pb = player.GetComponent<Rigidbody2D>();
                 Rigidbody2D rb = this.GetComponent<Rigidbody2D>();
-
-                inventory.AddBigRock();
+                
+                inventory.AddItem(rockPrefab);
                 pb.velocity = ((pb.mass * pb.velocity) + (rb.mass * rb.velocity)) / (pb.mass + rb.mass);
                 GameObject.Destroy(this.gameObject);
             }
