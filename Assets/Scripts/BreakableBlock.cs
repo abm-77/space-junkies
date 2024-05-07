@@ -6,6 +6,16 @@ using UnityEngine;
 public class BreakableBlock : MonoBehaviour
 {
     [SerializeField] private float _momentumThreshold;
+    public ParticleSystem system;
+
+    
+
+    void Start()
+    {
+        system = GetComponent<ParticleSystem>();
+        system.Pause();
+    }
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -35,7 +45,11 @@ public class BreakableBlock : MonoBehaviour
         other.rigidbody.velocity = newVelocityAfterCollision;
 
         // TODO: play destroy animation
-        
+        // var child = this.DestroyableObject;
+        // var collider = GetCollider2D();
+        // var sprite = GetComponent<SpriteRenderer>();
+
+        system.Play(); // Applies the new value directly to the Particle System
         Destroy(gameObject);
     }
 }
