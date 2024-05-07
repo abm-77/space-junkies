@@ -59,4 +59,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2-Adam.unity
     guid: 2de86f3668ff477478928cc739fb2bd7
+  - enabled: 1
+    path: Assets/Scenes/Concept 1.unity
+    guid: 85cdc7a7fe404c841ae2f422d42bfb5b
+  - enabled: 1
+    path: Assets/Scenes/Concept 0.unity
+    guid: 6f3de4d6cf0e740498cccfb689005b5c
+  - enabled: 1
+    path: Assets/Scenes/Concept 2.unity
+    guid: 77b3e4f27674d4647aa62a8abf525c93
+  - enabled: 1
+    path: Assets/Scenes/Concept 3.unity
+    guid: bfc9fa167c7b4134bbe1ab3ce6382c40
+  - enabled: 1
+    path: Assets/Scenes/Concept 4.unity
+    guid: eb785067232e8cd4da345c95a5ea701a
+  - enabled: 1
+    path: Assets/Scenes/Concept 5.unity
+    guid: 03f0add6570431448a951942e3b54e30
   m_configObjects: {}
