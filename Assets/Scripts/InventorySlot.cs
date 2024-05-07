@@ -30,7 +30,9 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         Item.Subscribe(item =>
             {
                 _displayImage.sprite = item ? item.GetComponent<SpriteRenderer>().sprite : _emptySprite;
-                // TODO: resize image based on mass
+                _displayImage.color = item ? item.GetComponent<SpriteRenderer>().color : Color.white;
+                var newScale = item ? (item.mass - 1f) * .3f + 1f : 1f;
+                _displayImage.GetComponent<RectTransform>().localScale = new Vector3(newScale, newScale, 1);
                 _massText.text = item ? item.mass.ToString() : "";
             })
             .AddTo(this);
