@@ -1,5 +1,6 @@
 using R3;
 using R3.Triggers;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -10,6 +11,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Sprite _emptySprite;
     [SerializeField] private Image _displayImage;
     [SerializeField] private GameObject _selectedIcon;
+    [SerializeField] private TextMeshProUGUI _massText;
 
     [Header("attach desired prefab in scene:")] [SerializeField]
     private Rigidbody2D _item;
@@ -25,7 +27,12 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
             .Subscribe(slot => _selectedIcon.SetActive(slot == this))
             .AddTo(this);
         Item.Value = _item;
-        Item.Subscribe(item => _displayImage.sprite = item ? item.GetComponent<SpriteRenderer>().sprite : _emptySprite)
+        Item.Subscribe(item =>
+            {
+                _displayImage.sprite = item ? item.GetComponent<SpriteRenderer>().sprite : _emptySprite;
+                // TODO: resize image based on mass
+                _massText.text = item ? item.mass.ToString() : "";
+            })
             .AddTo(this);
     }
 
