@@ -50,4 +50,9 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    
+    private void Start()
+    {
+        SelectedSlot.Value = _inventorySlots[0];
+    }
 }
