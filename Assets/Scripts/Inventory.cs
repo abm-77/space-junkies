@@ -19,6 +19,10 @@ public class Inventory : MonoBehaviour
         PlayerTotalMass = Observable.CombineLatest(_inventorySlots.Select(slot => slot.Item))
             .Select(items => items.Sum(item => item ? item.mass : 0f) + _playerBaseMass);
         PlayerTotalMass.Subscribe(mass => _player.mass = mass);
+    }
+
+    private void Start()
+    {
         SelectedSlot.Value = _inventorySlots[0];
     }
 }
