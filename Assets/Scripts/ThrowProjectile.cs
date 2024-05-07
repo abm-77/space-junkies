@@ -74,7 +74,6 @@ public class ThrowProjectile : MonoBehaviour
             _inventory.SelectedSlot.Value.Item.Value = null;
             var thrownItem = Instantiate(itemToThrow, player_pos, Quaternion.identity);
             Vector2 throw_velocity = throw_vector * (throw_impulse_scalar / _projectileToThrow.mass);
-            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), thrownItem.GetComponent<Collider2D>());
             thrownItem.velocity = throw_velocity;
             player.velocity -= throw_velocity * (_projectileToThrow.mass / player.mass);
         }
