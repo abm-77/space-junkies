@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Exit
   - Projectile
+  - Inventory
   layers:
   - Default
   - TransparentFX

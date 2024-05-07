@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4554201685522796762, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5056762508563037216, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_Name
       value: Big Rock
@@ -64,7 +68,8 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7337657367082294744, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7377833256934472982}
   m_Layer: 5
   m_Name: Inventory
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
+  big_rock: {fileID: 5021422516539987204, guid: 20e7a6d1bbc15f545a39a60027b34762, type: 3}
+  small_rock: {fileID: 8253309640218885009, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
 --- !u!1001 &412404587485345332
 PrefabInstance:
   m_ObjectHideFlags: 0
