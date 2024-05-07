@@ -267,7 +267,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4610585667524047218, guid: b24b7ae5c02555e4e9bfdc516158ec94, type: 3}
       propertyPath: _momentumThreshold
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6492274485085927067, guid: b24b7ae5c02555e4e9bfdc516158ec94, type: 3}
       propertyPath: m_Name
@@ -6518,7 +6518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1974141963223271446, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -78.13159
+      value: -78.13165
       objectReference: {fileID: 0}
     - target: {fileID: 1974141963223271446, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: m_AnchoredPosition.y
