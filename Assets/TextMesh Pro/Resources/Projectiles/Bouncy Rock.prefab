@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.2586544
       objectReference: {fileID: 0}
+    - target: {fileID: 4554201685522796762, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      propertyPath: m_Radius
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5056762508563037216, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
       propertyPath: m_Name
       value: Bouncy Rock

@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 941530890616795409, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 5021422516539987204, guid: 20e7a6d1bbc15f545a39a60027b34762, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1047466275213210015, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 2315428969174477133, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 8253309640218885009, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      objectReference: {fileID: 2688159499726915222, guid: 3f5640658b89a0e4880fa1c8f045eba9, type: 3}
     - target: {fileID: 2414098337206424877, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -406,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 4498211352577928513, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: _item
       value: 
-      objectReference: {fileID: 8253309640218885009, guid: a6a204a0d787b124c955b0cf0a59ecaf, type: 3}
+      objectReference: {fileID: 2688159499726915222, guid: 3f5640658b89a0e4880fa1c8f045eba9, type: 3}
     - target: {fileID: 4597696519860031777, guid: af0aa64ddb5953e48933519f8dc260f4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -836,6 +836,14 @@ PrefabInstance:
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 349377445}
+    - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
+      propertyPath: _regionsToIgnoreClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
+      propertyPath: _regionsToIgnoreClick.Array.data[0]
+      value: 
+      objectReference: {fileID: 349377446}
     - target: {fileID: 4972794774081474157, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
       propertyPath: m_Name
       value: Game Manager

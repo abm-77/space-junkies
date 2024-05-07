@@ -11,6 +11,8 @@ public class PickupScript : MonoBehaviour
     private SpriteRenderer r2d;
     private Rigidbody2D rockPrefab;
 
+    private Color _prevColor;
+
     [SerializeField] private string _thisName;
 
     [SerializeField]
@@ -20,11 +22,10 @@ public class PickupScript : MonoBehaviour
     void Start()
     {
         rockPrefab = Resources.Load<Rigidbody2D>($"Projectiles/{_thisName}");
-        Debug.Log(_thisName);
-        Debug.Log(rockPrefab);
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         player = GameObject.FindGameObjectWithTag("Player");
         r2d = GetComponent<SpriteRenderer>();
+        _prevColor = r2d.color;
     }
 
     void Update()
@@ -32,7 +33,7 @@ public class PickupScript : MonoBehaviour
         float dist = (player.transform.position - transform.position).magnitude;
         if (dist < pickup_distance)
         {
-            r2d.color = Color.green;
+            r2d.color = new Color(0, .9f, 1);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Rigidbody2D pb = player.GetComponent<Rigidbody2D>();
@@ -45,7 +46,7 @@ public class PickupScript : MonoBehaviour
         }
         else
         {
-            r2d.color = Color.white;
+            r2d.color = _prevColor;
         }
     }
 
