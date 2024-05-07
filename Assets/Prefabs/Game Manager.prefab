@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5297957653830477777}
   - component: {fileID: 8431439509735081424}
   - component: {fileID: 182940681244073531}
+  - component: {fileID: 5870056318930039667}
   m_Layer: 5
   m_Name: Game Manager
   m_TagString: Untagged
@@ -92,3 +93,15 @@ MonoBehaviour:
   throw_impulse_scalar: 1.2
   max_throw_mag: 100
   _regionsToIgnoreClick: []
+--- !u!114 &5870056318930039667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972794774081474157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb13b551163648c0a623e0313b95dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
