@@ -8,7 +8,7 @@ public class ThrowProjectile : MonoBehaviour
     private Rigidbody2D _projectileToThrow;
     [SerializeField] private Inventory _inventory;
 
-    [SerializeField] [Range(0.1f, 2.0f)] private float throw_impulse_scalar = 100;
+    [SerializeField][Range(0.1f, 2.0f)] private float throw_impulse_scalar = 100;
     [SerializeField] private float max_throw_mag = 100.0f;
 
     [SerializeField] private RectTransform[] _regionsToIgnoreClick;
@@ -72,6 +72,7 @@ public class ThrowProjectile : MonoBehaviour
 
             var itemToThrow = _inventory.SelectedSlot.Value.Item.Value;
             _inventory.SelectedSlot.Value.Item.Value = null;
+
             var thrownItem = Instantiate(itemToThrow, player_pos, Quaternion.identity);
             Vector2 throw_velocity = throw_vector * (throw_impulse_scalar / _projectileToThrow.mass);
             Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), thrownItem.GetComponent<Collider2D>());

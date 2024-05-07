@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1896534264354762763}
   - component: {fileID: 8253309640218885009}
   - component: {fileID: 4554201685522796762}
+  - component: {fileID: -963709515066493697}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Projectile
@@ -145,6 +146,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.6160227}
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 50.503544
+--- !u!114 &-963709515066493697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056762508563037216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3a64b2d59a245eb97641b30850fc1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup_distance: 20
