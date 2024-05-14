@@ -77,4 +77,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Concept 5.unity
     guid: 03f0add6570431448a951942e3b54e30
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: c8b67eceab0a88c4ba2f1f79ee5ffedb
+  - enabled: 1
+    path: Assets/Scenes/Level3-Revised.unity
+    guid: c1dbcdf64d011454f92c824a7a4f04c7
+  - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: 2cf8785e6a31c86439163167944b6a03
+  - enabled: 1
+    path: Assets/Scenes/Level1-Adam.unity
+    guid: f033bd23b4126ed498912e03efb75a61
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 94aa5f34db1f7984f8f7c5676b4aebd3
   m_configObjects: {}
