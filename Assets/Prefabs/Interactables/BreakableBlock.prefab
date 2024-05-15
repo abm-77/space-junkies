@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _momentumThreshold: 1
-  child: {fileID: 0}
   system: {fileID: 0}
 --- !u!198 &1342172518565550143
 ParticleSystem:
@@ -74,7 +73,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.1
     minScalar: 0
     maxCurve:
       serializedVersion: 2

@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     private InventorySlot[] _inventorySlots;
 
     public Observable<float> PlayerTotalMass;
+    private bool updated = false;
 
     private void Awake()
     {
@@ -32,14 +33,14 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
-    private void Start()
-    {
-        SelectedSlot.Value = _inventorySlots[0];
-    }
     
     private void Update()
     {
+        if (!updated)
+        {
+            SelectedSlot.Value = _inventorySlots[0];
+            updated = true;
+        }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectedSlot.Value = _inventorySlots[0];
