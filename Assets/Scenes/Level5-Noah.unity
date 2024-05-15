@@ -1072,6 +1072,8 @@ MonoBehaviour:
   max_throw_mag: 100
   _regionsToIgnoreClick:
   - {fileID: 23956419}
+  - {fileID: 1345441327}
+  - {fileID: 1219929968}
 --- !u!114 &909348057
 MonoBehaviour:
   m_ObjectHideFlags: 0

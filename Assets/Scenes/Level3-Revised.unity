@@ -1017,12 +1017,20 @@ PrefabInstance:
       objectReference: {fileID: 349377445}
     - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
       propertyPath: _regionsToIgnoreClick.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
       propertyPath: _regionsToIgnoreClick.Array.data[0]
       value: 
       objectReference: {fileID: 349377446}
+    - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
+      propertyPath: _regionsToIgnoreClick.Array.data[1]
+      value: 
+      objectReference: {fileID: 426896473}
+    - target: {fileID: 182940681244073531, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
+      propertyPath: _regionsToIgnoreClick.Array.data[2]
+      value: 
+      objectReference: {fileID: 763333943}
     - target: {fileID: 4972794774081474157, guid: 0096d71faabd3d949985bcd7b1445edf, type: 3}
       propertyPath: m_Name
       value: Game Manager
