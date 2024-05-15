@@ -14,6 +14,7 @@ public class Switch : MonoBehaviour
             return;
         }
         Hit.Value = true;
+        GameObject.FindWithTag("ClickSound")?.GetComponent<AudioSource>().Play();
         GetComponent<SpriteRenderer>().sprite = toggledSprite;
     }
 }

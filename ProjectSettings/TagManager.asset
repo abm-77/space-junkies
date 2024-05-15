@@ -8,6 +8,8 @@ TagManager:
   - Projectile
   - Inventory
   - ExitSound
+  - BreakSound
+  - ClickSound
   layers:
   - Default
   - TransparentFX

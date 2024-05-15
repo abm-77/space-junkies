@@ -50,5 +50,6 @@ public class BreakableBlock : MonoBehaviour
         var sprite = GetComponent<SpriteRenderer>();
         sprite.enabled = false;
         system.Play(); // Applies the new value directly to the Particle System
+        GameObject.FindWithTag("BreakSound")?.GetComponent<AudioSource>().Play();
     }
 }
