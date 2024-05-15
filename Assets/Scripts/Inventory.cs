@@ -37,4 +37,48 @@ public class Inventory : MonoBehaviour
     {
         SelectedSlot.Value = _inventorySlots[0];
     }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SelectedSlot.Value = _inventorySlots[0];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SelectedSlot.Value = _inventorySlots[1];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SelectedSlot.Value = _inventorySlots[2];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SelectedSlot.Value = _inventorySlots[3];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SelectedSlot.Value = _inventorySlots[4];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SelectedSlot.Value = _inventorySlots[5];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SelectedSlot.Value = _inventorySlots[6];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SelectedSlot.Value = _inventorySlots[7];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            SelectedSlot.Value = _inventorySlots[8];
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            SelectedSlot.Value = _inventorySlots[9];
+        }
+    }
 }
