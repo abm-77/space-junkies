@@ -11,6 +11,7 @@ public class Exit : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
+			GameObject.FindWithTag("ExitSound")?.GetComponent<AudioSource>().Play();
 			SceneManager.LoadScene(next_level);
 		}
 	}

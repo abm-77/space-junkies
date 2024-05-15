@@ -7,6 +7,7 @@ TagManager:
   - Exit
   - Projectile
   - Inventory
+  - ExitSound
   layers:
   - Default
   - TransparentFX
